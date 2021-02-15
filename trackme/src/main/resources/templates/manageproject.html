@@ -1,0 +1,77 @@
+<form>
+    <div>
+        <div class="form-group">
+            <label for="title">Project Title</label>
+            <input type="text" id="title" name="title" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="status">Project Status</label>
+            <select id="status" name="status" class="form-control">
+                <option value="0">New</option>
+                <option value="1">Existing</option>
+            </select>
+        </div>
+    </div>
+    <div id="rows">
+        <div class="row contact-row">
+            <div class="col-5">
+                <div class="form-group">
+                    <label for="contact">Contact</label>
+                    <input id="contact@(i)" type="text" name="contact[@i]" class="form-control" required>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email@(i)" type="email" name="email[@i]" class="form-control" required>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input id="phone@(i)" type="tel" name="phone[@i]" class="form-control">
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="form-group">
+                    <label for="phone" class="float-right">Delete</label>
+                    <a href="#" class="btn btn-outline-danger float-right">X</a>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+    <button id="addButton" type="button" class="btn btn-outline-primary">Add</button>
+    <br />
+    <br />
+    <a href="#" class="btn btn-secondary">Cancel</a>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<div id="exampleRow" class="row contact-row d-none">
+    <div class="col-5">
+        <div class="form-group">
+            <label for="contact">Contact</label>
+            <input id="contact" type="text" name="contact" class="form-control" required>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" class="form-control" required>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input id="phone" type="tel" name="phone" class="form-control">
+        </div>
+    </div>
+    <div class="col-1">
+        <div class="form-group">
+            <label for="phone" class="float-right">Delete</label>
+            <a name="phone" href="#" class="btn btn-outline-danger float-right">X</a>
+        </div>
+    </div>
+</div>
+}
